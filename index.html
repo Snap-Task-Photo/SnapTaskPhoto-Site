@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnapTaskPhoto - Keep the muck out of your memories</title>
+    <meta name="description" content="Keep the muck out of your memories. Capture new task photos or clean out the clutter from your Camera Roll. Free for iOS.">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: #fafafa;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, #5856D6 0%, #007AFF 100%);
+            color: white;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0 0 0.5rem 0;
+        }
+        .hero .tagline {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        .hero .subtagline {
+            font-size: 1.1rem;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        .app-store-badge {
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        .app-store-badge img {
+            height: 50px;
+        }
+        .app-store-placeholder {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .features {
+            margin: 2rem 0;
+        }
+        .feature {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        .feature-icon {
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        .feature-text h3 {
+            margin: 0 0 0.25rem 0;
+            font-size: 1.1rem;
+        }
+        .feature-text p {
+            margin: 0;
+            color: #555;
+        }
+        .two-paths {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        @media (max-width: 600px) {
+            .two-paths {
+                grid-template-columns: 1fr;
+            }
+        }
+        .path-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            border: 1px solid #e5e5e5;
+        }
+        .path-card h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.2rem;
+        }
+        .path-card .icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .path-card p {
+            margin: 0;
+            color: #555;
+        }
+        .use-cases {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 2rem 0;
+            border: 1px solid #e5e5e5;
+        }
+        .use-cases h2 {
+            margin-top: 0;
+        }
+        .use-cases ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        .use-cases li {
+            margin-bottom: 0.5rem;
+        }
+        .cta {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        .cta h2 {
+            margin-top: 0;
+        }
+        a {
+            color: #007AFF;
+        }
+        footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #ddd;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: center;
+        }
+        footer nav {
+            margin-bottom: 1rem;
+        }
+        footer nav a {
+            margin: 0 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>SnapTaskPhoto</h1>
+        <p class="tagline">Keep the muck out of your memories.</p>
+        <p class="subtagline">Capture new task photos or clean out the clutter from your Camera Roll.</p>
+        
+        <div class="app-store-placeholder">
+            Coming Soon on the App Store
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>The Problem</h2>
+        <p>Your Camera Roll is full of stuff that isn't memories - conference slides, receipts, screenshots, products to buy, things to fix. They clutter your photos and get in the way when you're looking for actual memories.</p>
+
+        <h2>Two Ways In</h2>
+        <div class="two-paths">
+            <div class="path-card">
+                <div class="icon">📷</div>
+                <h3>Snap New Photos</h3>
+                <p>Capture directly with the in-app camera. Photos go straight to iCloud Drive - they never touch your Camera Roll.</p>
+            </div>
+            <div class="path-card">
+                <div class="icon">🧹</div>
+                <h3>Clean Out the Muck</h3>
+                <p>Use Gallery Triage to swipe through your Camera Roll. Move task photos out or delete them - keep only the memories.</p>
+            </div>
+        </div>
+
+        <h2>Then Take Action</h2>
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">✅</span>
+                <div class="feature-text">
+                    <h3>Convert to Apple Reminders</h3>
+                    <p>Turn any photo into a Reminder with one tap. Deep link lets you tap the reminder to see the photo.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">✨</span>
+                <div class="feature-text">
+                    <h3>AI-Powered Descriptions</h3>
+                    <p>Optionally analyze photos with AI to generate smart task titles. Great for conference slides and receipts.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🔗</span>
+                <div class="feature-text">
+                    <h3>Share to Any App</h3>
+                    <p>Deep links work with Reminders, Things 3, and more. Links point back to the photo so you always have context.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📁</span>
+                <div class="feature-text">
+                    <h3>Archive When Done</h3>
+                    <p>Completed tasks go to Archive. Delete when you don't need them anymore.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="use-cases">
+            <h2>Perfect for</h2>
+            <ul>
+                <li><strong>Conference photos:</strong> Capture slides and whiteboards, get AI summaries</li>
+                <li><strong>Receipts:</strong> Archive for expenses without cluttering your memories</li>
+                <li><strong>Shopping:</strong> Snap products to buy later</li>
+                <li><strong>Home projects:</strong> Photograph things that need fixing</li>
+                <li><strong>Screenshots:</strong> Move them out of your Camera Roll</li>
+                <li><strong>Evidence:</strong> Keep reference photos organized and findable</li>
+            </ul>
+        </div>
+
+        <div class="cta">
+            <h2>Simple. Safe. Private.</h2>
+            <p>Your photos stay in your iCloud Drive.<br>AI analysis is optional - photos are sent securely but not stored.</p>
+            <p><strong>Requires iOS 18.6 or later.</strong></p>
+        </div>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="support.html">Support</a>
+        </nav>
+        <p>&copy; 2025 Digital Gemba, LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>
