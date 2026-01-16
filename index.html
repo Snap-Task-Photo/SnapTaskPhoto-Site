@@ -129,6 +129,47 @@
         .use-cases li {
             margin-bottom: 0.5rem;
         }
+        .pricing-box {
+            background: linear-gradient(135deg, #f5f5f7 0%, #fff 100%);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 2rem 0;
+            border: 1px solid #e5e5e5;
+            text-align: center;
+        }
+        .pricing-box h2 {
+            margin-top: 0;
+        }
+        .pricing-tiers {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        @media (max-width: 500px) {
+            .pricing-tiers {
+                grid-template-columns: 1fr;
+            }
+        }
+        .tier {
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            border: 1px solid #e5e5e5;
+        }
+        .tier h3 {
+            margin: 0 0 0.5rem 0;
+        }
+        .tier .price {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: #007AFF;
+        }
+        .tier p {
+            margin: 0.5rem 0 0 0;
+            font-size: 0.9rem;
+            color: #555;
+        }
         .cta {
             text-align: center;
             padding: 3rem 0;
@@ -159,7 +200,7 @@
     <header class="hero">
         <h1>SnapTaskPhoto</h1>
         <p class="tagline">Keep the muck out of your memories.</p>
-        <p class="subtagline">Capture photos directly or clean out the clutter from your Camera Roll.</p>
+        <p class="subtagline">Capture task photos directly or clean out the clutter from your Camera Roll.</p>
         
         <div class="app-store-placeholder">
             Coming Soon on the App Store
@@ -168,69 +209,105 @@
 
     <main class="container">
         <h2>The Problem</h2>
-        <p>Your Camera Roll is full of photos that are not memories - receipts, screenshots, products to buy, things to fix. They clutter your photos and get in the way when you're looking for actual memories.</p>
+        <p>Your Camera Roll is full of photos that aren't memories — receipts, screenshots, products to buy, things to fix. They clutter your photos and get in the way when you're looking for actual memories.</p>
 
         <h2>Two Ways In</h2>
         <div class="two-paths">
             <div class="path-card">
                 <div class="icon">📷</div>
-                <h3>Capture Photos Directly</h3>
-                <p>Snap new photos - they go straight to Files, not your Photo Library.</p>
+                <h3>Capture Directly</h3>
+                <p>Snap task photos with the in-app camera. They go straight to iCloud Drive, never touching your Camera Roll.</p>
             </div>
             <div class="path-card">
                 <div class="icon">🧹</div>
-                <h3>Clean Out the Muck</h3>
-                <p>Import from Camera Roll and clean up the clutter - keep only the memories.</p>
+                <h3>Photo Gallery Cleanup</h3>
+                <p>Triage your Camera Roll with swipe cards or tile grid view. Move task photos to the app, keep memories, delete the rest.</p>
             </div>
         </div>
 
-        <h2>Then Take Action</h2>
+        <h2>Stay Organized</h2>
+        <div class="features">
+            <div class="feature">
+                <span class="feature-icon">📥</span>
+                <div class="feature-text">
+                    <h3>Inbox for Action</h3>
+                    <p>New photos land in a flat Inbox. Swipe through cards or view as a grid. Process quickly without getting lost in folders.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📁</span>
+                <div class="feature-text">
+                    <h3>Archive for Reference</h3>
+                    <p>When you're done, archive to organized folders: Receipts, Cards, Medical, Travel, and more. Your reference library, always findable.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">↔️</span>
+                <div class="feature-text">
+                    <h3>Swipe Interface</h3>
+                    <p>Tinder-style card swiping. Left to archive, right to delete, tap to edit, double-tap to share. Fast and satisfying.</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>Take Action</h2>
         <div class="features">
             <div class="feature">
                 <span class="feature-icon">✅</span>
                 <div class="feature-text">
-                    <h3>Convert to Apple Reminders</h3>
-                    <p>Turn any photo into a Reminder with one tap. Deep link lets you tap the reminder to see the photo.</p>
+                    <h3>Create Reminders</h3>
+                    <p>Turn any photo into an Apple Reminder with one tap. Deep link lets you tap the reminder to jump back to the photo.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">🔗</span>
+                <div class="feature-text">
+                    <h3>Share Anywhere</h3>
+                    <p>Works with Reminders, Things 3, and any app that accepts shares. Import photos from other apps via the Share Extension.</p>
                 </div>
             </div>
             <div class="feature">
                 <span class="feature-icon">✨</span>
                 <div class="feature-text">
                     <h3>AI-Powered Descriptions</h3>
-                    <p>Optionally analyze photos with AI to generate smart task titles. Great for conference slides and receipts.</p>
-                </div>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">🔗</span>
-                <div class="feature-text">
-                    <h3>Share to Any App</h3>
-                    <p>Deep links work with Reminders, Things 3, and more. Links point back to the photo so you always have context.</p>
-                </div>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">📁</span>
-                <div class="feature-text">
-                    <h3>Archive When Done</h3>
-                    <p>Completed tasks go to Archive. Delete when you don't need them anymore.</p>
+                    <p>Optionally analyze photos with AI to generate smart task titles or extract all text. Great for conference slides and receipts.</p>
                 </div>
             </div>
         </div>
 
         <div class="use-cases">
-            <h2>Perfect for</h2>
+            <h2>Perfect For</h2>
             <ul>
                 <li><strong>Conference photos:</strong> Capture slides and whiteboards, get AI summaries</li>
                 <li><strong>Receipts:</strong> Archive for expenses without cluttering your memories</li>
                 <li><strong>Shopping:</strong> Snap products to buy later</li>
                 <li><strong>Home projects:</strong> Photograph things that need fixing</li>
+                <li><strong>IDs & Cards:</strong> Keep insurance cards, membership IDs organized</li>
                 <li><strong>Screenshots:</strong> Move them out of your Camera Roll</li>
-                <li><strong>Evidence:</strong> Keep reference photos organized and findable</li>
             </ul>
+        </div>
+
+        <div class="pricing-box">
+            <h2>Simple Pricing</h2>
+            <div class="pricing-tiers">
+                <div class="tier">
+                    <h3>Free</h3>
+                    <p class="price">$0</p>
+                    <p>Full capture & organization. On-device text recognition. 20 AI analyses included.</p>
+                </div>
+                <div class="tier">
+                    <h3>Pro</h3>
+                    <p class="price">$3.99/mo</p>
+                    <p>Everything in Free, plus unlimited AI photo analysis. Cancel anytime.</p>
+                </div>
+            </div>
         </div>
 
         <div class="cta">
             <h2>Simple. Safe. Private.</h2>
-            <p>Your photos stay in your iCloud Drive.<br>AI analysis is optional - photos are sent securely but not stored.</p>
+            <p>Your photos stay in your iCloud Drive — we never see them.<br>
+            On-device text recognition runs entirely on your phone.<br>
+            AI analysis is optional and doesn't store your photos.</p>
             <p><strong>Requires iOS 18.6 or later.</strong></p>
         </div>
     </main>

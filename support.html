@@ -51,6 +51,14 @@
             font-size: 1.1rem;
             font-weight: 500;
         }
+        .faq-section {
+            margin-top: 2rem;
+        }
+        .faq-section h2 {
+            color: #007AFF;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 0.5rem;
+        }
         .faq-item {
             margin-bottom: 1.5rem;
         }
@@ -84,54 +92,162 @@
 
     <h2>Frequently Asked Questions</h2>
 
-    <div class="faq-item">
-        <h3>How do I capture photos with the app?</h3>
-        <p>Use the in-app camera to take photos that go directly to your iCloud Drive — they never touch your Camera Roll. This is the fastest way to capture task photos without cluttering your photo library.</p>
+    <!-- Getting Started -->
+    <div class="faq-section">
+        <h2>Getting Started</h2>
+
+        <div class="faq-item">
+            <h3>How do I capture photos with the app?</h3>
+            <p>Tap the camera button to take photos that go directly to your iCloud Drive — they never touch your Camera Roll. This is the fastest way to capture task photos without cluttering your photo library.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Where are my photos stored?</h3>
+            <p>Photos are stored in your iCloud Drive in a "SnapTaskPhoto" folder. You can see them in the Files app under iCloud Drive → SnapTaskPhoto. This means your photos are backed up automatically, sync across your devices, and won't be lost if you delete the app.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What happens if I delete the app?</h3>
+            <p>Your photos stay safe in iCloud Drive. Reinstall the app anytime and they'll be right where you left them. You can also access them directly through the Files app.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Do photos sync across my devices?</h3>
+            <p>Yes. Photos are stored in iCloud Drive, so they automatically sync to any device signed into the same Apple ID with iCloud Drive enabled.</p>
+        </div>
     </div>
 
-    <div class="faq-item">
-        <h3>Where are my photos stored?</h3>
-        <p>Photos are stored in your iCloud Drive in a "SnapTaskPhoto" folder. You can see them in the Files app under iCloud Drive → SnapTaskPhoto. This means your photos are backed up automatically, sync across your devices, and won't be lost if you delete the app.</p>
+    <!-- Using the App -->
+    <div class="faq-section">
+        <h2>Using the App</h2>
+
+        <div class="faq-item">
+            <h3>How do the swipe gestures work?</h3>
+            <p>In swipe view, use gestures to quickly process photos:</p>
+            <ul>
+                <li><strong>Swipe left:</strong> Archive the photo</li>
+                <li><strong>Swipe right:</strong> Delete the photo</li>
+                <li><strong>Swipe up/down:</strong> Navigate to next/previous photo</li>
+                <li><strong>Tap:</strong> Open photo details to edit</li>
+                <li><strong>Double-tap:</strong> Share to Reminders, Things 3, or other apps</li>
+            </ul>
+            <p>You can also switch to grid view for an overview of all your photos.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>How do I create a Reminder from a photo?</h3>
+            <p>Open any photo and tap Share, or double-tap in swipe view. Select Reminders from the share sheet. The reminder includes a deep link back to the photo so you can tap it to see what you need to do.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What happens to my Reminder link if I delete the photo?</h3>
+            <p>Deep links are preserved. When you delete a photo, it moves to the Deleted folder rather than being permanently removed. The link in your Reminder will still work. You can permanently purge deleted photos in Settings when you're sure you don't need them.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Can I crop photos?</h3>
+            <p>Yes. Open a photo and tap Crop. Note that cropping is permanent — it replaces the original image. The app will warn you before cropping.</p>
+        </div>
     </div>
 
-    <div class="faq-item">
-        <h3>What happens if I delete the app?</h3>
-        <p>Your photos stay safe in iCloud Drive. Reinstall the app anytime and they'll be right where you left them. You can also access them directly through the Files app.</p>
+    <!-- Folders & Organization -->
+    <div class="faq-section">
+        <h2>Folders & Organization</h2>
+
+        <div class="faq-item">
+            <h3>How do folders work?</h3>
+            <p>Photos flow through two main areas:</p>
+            <ul>
+                <li><strong>Inbox:</strong> A flat triage space for new photos. No subfolders — just capture and process quickly.</li>
+                <li><strong>Archive:</strong> Organized folders for reference. Choose a folder when you archive (Receipts, Cards, Medical, Travel, etc.).</li>
+            </ul>
+            <p>This keeps your Inbox clean for action while Archive becomes your organized reference library.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What folders are available?</h3>
+            <p>The app provides folder templates you can activate: Unfiled (always on), Receipts, Food Log, Cards, Reference, Medical, Travel, Home, Work, and Other. Activate the ones you need in Settings.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What's the difference between Archive and Delete?</h3>
+            <p>Archive keeps the photo in your iCloud Drive for reference — useful for receipts or things you've shared to Reminders. Delete moves it to a Deleted folder where you can recover it later or permanently remove it to free up space.</p>
+        </div>
     </div>
 
-    <div class="faq-item">
-        <h3>How do I create a Reminder from a photo?</h3>
-        <p>Open any photo, double-tap to share, and select Reminders. The reminder includes a link back to the photo so you can tap it to see what you need to do.</p>
+    <!-- Photo Gallery Cleanup -->
+    <div class="faq-section">
+        <h2>Photo Gallery Cleanup</h2>
+
+        <div class="faq-item">
+            <h3>What does Photo Gallery Cleanup do?</h3>
+            <p>Photo Gallery Cleanup lets you triage your Camera Roll to separate task photos from memories. You can view photos as swipeable cards or in a tile grid for a birds-eye view. For each photo, choose to:</p>
+            <ul>
+                <li><strong>Move:</strong> Import to the app and delete from Camera Roll</li>
+                <li><strong>Copy:</strong> Import to the app but keep in Camera Roll</li>
+                <li><strong>Keep:</strong> Mark as a memory — it won't appear in future cleanups</li>
+                <li><strong>Delete:</strong> Remove from Camera Roll entirely</li>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h3>Will cleanup affect my original photos?</h3>
+            <p>Move and Copy create a downsized copy in the app (optimized for storage). If you choose Move, the original is deleted from your Camera Roll but recoverable in your Recently Deleted album for 30 days. Keep and Delete only affect Camera Roll — they don't copy anything to the app.</p>
+        </div>
     </div>
 
-    <div class="faq-item">
-        <h3>What's the difference between Archive and Delete?</h3>
-        <p>Archive keeps the photo in your iCloud Drive for reference — useful for receipts or things you've shared to Reminders. Delete moves it to a Deleted folder where you can recover it later or permanently remove it to free up space.</p>
+    <!-- AI Analysis -->
+    <div class="faq-section">
+        <h2>AI Analysis</h2>
+
+        <div class="faq-item">
+            <h3>What's the difference between Task and OCR analysis modes?</h3>
+            <p>You can choose your preferred mode in Settings:</p>
+            <ul>
+                <li><strong>Task mode:</strong> Infers actionable task titles from the photo. Best for "what do I need to do?" situations.</li>
+                <li><strong>OCR mode:</strong> Extracts all visible text verbatim. Best for documents, receipts, or conference slides where you want every word captured.</li>
+            </ul>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does the app do text recognition without AI?</h3>
+            <p>Yes. The app automatically runs on-device text recognition (OCR) when you capture or import photos. This is free, instant, and completely private — nothing leaves your device. The AI analysis is an optional extra that provides smarter, contextual descriptions.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>Does the AI analysis send my photos to the cloud?</h3>
+            <p>Only if you use the AI analysis feature. When you tap "Task" or "OCR" to analyze, the photo is sent securely to generate a smart description. This is optional — on-device recognition and manual notes work without any cloud connection.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What are the free tier limits?</h3>
+            <p>You get 20 free AI analyses. All other features — capture, organization, sharing, on-device text recognition — are unlimited and free. After using your free analyses, you can upgrade to Pro for unlimited AI analysis.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What does Pro include?</h3>
+            <p>Pro unlocks unlimited AI photo analysis for $3.99/month. You can subscribe in Settings. Cancel anytime — your photos stay in iCloud Drive regardless of subscription status.</p>
+        </div>
     </div>
 
-    <div class="faq-item">
-        <h3>Why does the app ask for location permission?</h3>
-        <p>Location permission is optional. If granted, the app tags photos with where they were captured — helpful for remembering where you saw something. You can use the app without granting location permission.</p>
-    </div>
+    <!-- Privacy & Permissions -->
+    <div class="faq-section">
+        <h2>Privacy & Permissions</h2>
 
-    <div class="faq-item">
-        <h3>Do photos sync across my devices?</h3>
-        <p>Yes. Photos are stored in iCloud Drive, so they automatically sync to any device signed into the same Apple ID with iCloud Drive enabled.</p>
-    </div>
+        <div class="faq-item">
+            <h3>Is my data private?</h3>
+            <p>Yes. Photos are stored in your personal iCloud Drive — we never see them. On-device text recognition runs entirely on your phone. AI analysis is optional and processed without storing your photos. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
+        </div>
 
-    <div class="faq-item">
-        <h3>Is my data private?</h3>
-        <p>Yes. Photos are stored in your personal iCloud Drive — we never see them. The app can use AI to analyze photos and suggest descriptions, but this is optional. See our <a href="privacy.html">Privacy Policy</a> for details.</p>
-    </div>
+        <div class="faq-item">
+            <h3>Why does the app ask for location permission?</h3>
+            <p>Location permission is optional. If granted, the app tags photos with where they were captured — helpful for remembering where you saw something. You can use the app without granting location permission.</p>
+        </div>
 
-    <div class="faq-item">
-        <h3>What does Gallery Triage do?</h3>
-        <p>Gallery Triage lets you swipe through your Camera Roll to quickly sort photos. Move task photos to the app, keep memories in your library, or delete what you don't need. It's the fastest way to clean up your Camera Roll.</p>
-    </div>
-
-    <div class="faq-item">
-        <h3>Does the AI analysis send my photos to the cloud?</h3>
-        <p>Only if you use the AI analysis feature. When you tap "Analyze," the photo is sent securely to generate a smart description. This is optional — you can skip it and add your own notes instead.</p>
+        <div class="faq-item">
+            <h3>Why does the app need photo library access?</h3>
+            <p>Photo library access is only needed for Photo Gallery Cleanup, which lets you import from or delete photos in your Camera Roll. The main capture feature works without it — photos go directly to iCloud Drive.</p>
+        </div>
     </div>
 
     <h2>App Information</h2>
