@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SnapTaskPhoto - Keep the Muck Out of Your Memories™</title>
-    <meta name="description" content="Keep the Muck Out of Your Memories™. Capture, move, or copy images into a workflow to organize, share, or act on. Free for iOS.">
+    <meta name="description" content="Keep the muck out of your memories. Use AI to remember tasks, count carbs, extract text, and identify items and their value. Swipe to act. Archive when done.">
     <style>
         * {
             box-sizing: border-box;
@@ -35,12 +35,13 @@
         .hero .tagline {
             font-size: 1.4rem;
             font-weight: 600;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
-        .hero .subtagline {
-            font-size: 1.1rem;
+        .hero .tagline-second {
+            font-size: 1.2rem;
+            font-weight: 500;
             opacity: 0.95;
-            margin-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
         }
         .hero .hero-bullets {
             font-size: 0.95rem;
@@ -66,6 +67,21 @@
             font-size: 1.5rem;
             margin-top: 2.5rem;
             margin-bottom: 1rem;
+        }
+        .problem-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 24px;
+            margin: 2rem 0;
+            border: 1px solid #e5e5e5;
+        }
+        .problem-section h2 {
+            margin-top: 0;
+        }
+        .muck-list {
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
         }
         .features {
             margin: 2rem 0;
@@ -116,6 +132,51 @@
         .path-card p {
             margin: 0;
             color: #555;
+        }
+        .ai-section {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            border-radius: 12px;
+            padding: 28px;
+            margin: 2rem 0;
+        }
+        .ai-section h2 {
+            margin-top: 0;
+            color: white;
+        }
+        .ai-section p {
+            opacity: 0.9;
+        }
+        .ai-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 500px) {
+            .ai-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .ai-card {
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .ai-card h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+        }
+        .ai-card p {
+            margin: 0;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+        .ai-disclaimer {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            margin-top: 1.5rem;
+            font-style: italic;
         }
         .use-cases {
             background: #fff;
@@ -205,8 +266,8 @@
     <header class="hero">
         <h1>SnapTaskPhoto</h1>
         <p class="tagline">Keep the Muck Out of Your Memories™</p>
-        <p class="subtagline">Capture, move, or copy images into a workflow to organize, share, or act on.</p>
-        <p class="hero-bullets">✓ Snap to Files not Photos · ✓ Manage Photos and declutter · ✓ Share. Sort. Act.</p>
+        <p class="tagline-second">Get value from the muck.</p>
+        <p class="hero-bullets">✓ Capture to folders, not Camera Roll · ✓ AI analyzes anything · ✓ Swipe to act</p>
         
         <div class="app-store-placeholder">
             Coming Soon on the App Store
@@ -214,69 +275,80 @@
     </header>
 
     <main class="container">
-        <h2>The Problem</h2>
-        <p>Your Camera Roll is full of photos that aren't memories — receipts, screenshots, products to buy, things to fix. They clutter your photos and get in the way when you're looking for actual memories.</p>
+        <div class="problem-section">
+            <h2>Why do we take photos?</h2>
+            <p>To capture memories—vacations, family, moments we treasure.</p>
+            <p>But also... everything else.</p>
+            <p class="muck-list">Whiteboards. Slides. Notes. Receipts. Screenshots. Business cards. Serial numbers. Broken things to fix. Food to track. Parking spots. Things to sell. Confirmation codes. Ideas scribbled on napkins.</p>
+            <p><strong>That's the muck. It's burying your memories.</strong></p>
+        </div>
 
-        <h2>Two Ways In</h2>
+        <h2>Two Ways to Clean Up</h2>
         <div class="two-paths">
             <div class="path-card">
                 <div class="icon">📷</div>
                 <h3>Capture Directly</h3>
-                <p>Snap task photos with the in-app camera. They go straight to iCloud Drive, never touching your Camera Roll.</p>
+                <p>Snap task photos with the in-app camera. They go straight to organized folders, never touching your Camera Roll.</p>
             </div>
             <div class="path-card">
                 <div class="icon">🧹</div>
-                <h3>Photo Gallery Cleanup</h3>
-                <p>Triage your Camera Roll with swipe cards or tile grid view. Move task photos to the app, keep memories, delete the rest.</p>
+                <h3>Clean Your Camera Roll</h3>
+                <p>Swipe through existing photos. Move the muck here, keep the memories, delete the rest.</p>
             </div>
         </div>
 
-        <h2>Stay Organized</h2>
+        <div class="ai-section">
+            <h2>✨ AI Gets Value from the Muck</h2>
+            <p>Point your camera at anything. AI analyzes it and tells you what you need to know.</p>
+            <div class="ai-grid">
+                <div class="ai-card">
+                    <h4>🎯 Task</h4>
+                    <p>"What should I do?" — AI suggests an actionable task from whiteboards, broken items, things to buy.</p>
+                </div>
+                <div class="ai-card">
+                    <h4>📝 OCR</h4>
+                    <p>"What does it say?" — Extract text from signs, receipts, business cards, documents.</p>
+                </div>
+                <div class="ai-card">
+                    <h4>🍽️ Food</h4>
+                    <p>"What's the damage?" — Identify meals, estimate carbs and calories for tracking.</p>
+                </div>
+                <div class="ai-card">
+                    <h4>💰 Value</h4>
+                    <p>"What is this? What's it worth?" — Identify anything and estimate its value.</p>
+                </div>
+            </div>
+            <p class="ai-disclaimer">AI estimates are for fun and information—not for medical, dietary, or financial decisions.</p>
+        </div>
+
+        <h2>Swipe to Act</h2>
         <div class="features">
+            <div class="feature">
+                <span class="feature-icon">↔️</span>
+                <div class="feature-text">
+                    <h3>Card-Based Interface</h3>
+                    <p>Swipe left to archive, right to delete, tap to edit or analyze, double-tap to share. Fast and satisfying.</p>
+                </div>
+            </div>
+            <div class="feature">
+                <span class="feature-icon">📤</span>
+                <div class="feature-text">
+                    <h3>Share to Any App</h3>
+                    <p>Share to Reminders, Things 3, Notes, Messages—anything. Deep links jump back to the photo.</p>
+                </div>
+            </div>
             <div class="feature">
                 <span class="feature-icon">📥</span>
                 <div class="feature-text">
-                    <h3>Inbox for Action</h3>
-                    <p>New photos land in a flat Inbox. Swipe through cards or view as a grid. Process quickly without getting lost in folders.</p>
+                    <h3>Import from Anywhere</h3>
+                    <p>Share Extension imports photos from any app. Clean up your existing Camera Roll too.</p>
                 </div>
             </div>
             <div class="feature">
                 <span class="feature-icon">📁</span>
                 <div class="feature-text">
-                    <h3>Archive for Reference</h3>
-                    <p>When you're done, archive to organized folders: Receipts, Cards, Medical, Travel, and more. Your reference library, always findable.</p>
-                </div>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">↔️</span>
-                <div class="feature-text">
-                    <h3>Swipe Interface</h3>
-                    <p>Tinder-style card swiping. Left to archive, right to delete, tap to edit, double-tap to share. Fast and satisfying.</p>
-                </div>
-            </div>
-        </div>
-
-        <h2>Take Action</h2>
-        <div class="features">
-            <div class="feature">
-                <span class="feature-icon">✅</span>
-                <div class="feature-text">
-                    <h3>Create Reminders</h3>
-                    <p>Turn any photo into an Apple Reminder with one tap. Deep link lets you tap the reminder to jump back to the photo.</p>
-                </div>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">🔗</span>
-                <div class="feature-text">
-                    <h3>Share Anywhere</h3>
-                    <p>Works with Reminders, Things 3, and any app that accepts shares. Import photos from other apps via the Share Extension.</p>
-                </div>
-            </div>
-            <div class="feature">
-                <span class="feature-icon">✨</span>
-                <div class="feature-text">
-                    <h3>AI-Powered Descriptions</h3>
-                    <p>Optionally analyze photos with AI to generate smart task titles or extract all text. Great for conference slides and receipts.</p>
+                    <h3>Organize Your Way</h3>
+                    <p>Up to 4 folders to categorize. Grid view for overview, swipe view for action.</p>
                 </div>
             </div>
         </div>
@@ -284,12 +356,15 @@
         <div class="use-cases">
             <h2>Perfect For</h2>
             <ul>
-                <li><strong>Conference photos:</strong> Capture slides and whiteboards, get AI summaries</li>
-                <li><strong>Receipts:</strong> Archive for expenses without cluttering your memories</li>
-                <li><strong>Shopping:</strong> Snap products to buy later</li>
+                <li><strong>Whiteboards & slides:</strong> Capture meeting notes, get AI summaries</li>
+                <li><strong>Receipts:</strong> Archive for expenses without cluttering memories</li>
+                <li><strong>Serial numbers:</strong> Keep for warranty and support calls</li>
+                <li><strong>Food tracking:</strong> Snap meals, get carb and calorie estimates</li>
+                <li><strong>Things to sell:</strong> Photograph items, get value estimates</li>
                 <li><strong>Home projects:</strong> Photograph things that need fixing</li>
-                <li><strong>IDs & Cards:</strong> Keep insurance cards, membership IDs organized</li>
-                <li><strong>Screenshots:</strong> Move them out of your Camera Roll</li>
+                <li><strong>Business cards:</strong> Extract contact info with OCR</li>
+                <li><strong>Screenshots:</strong> Confirmation codes, recipes, things to remember</li>
+                <li><strong>Parking spots:</strong> Remember where you parked</li>
             </ul>
         </div>
 
@@ -314,7 +389,7 @@
             <p>Your photos stay in your iCloud Drive — we never see them.<br>
             On-device text recognition runs entirely on your phone.<br>
             AI analysis is optional and doesn't store your photos.</p>
-            <p><strong>Requires iOS 18.6 or later.</strong></p>
+            <p><strong>Requires iOS 18.0 or later.</strong></p>
         </div>
     </main>
 
