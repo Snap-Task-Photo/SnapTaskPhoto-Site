@@ -98,7 +98,7 @@
 
         <div class="faq-item">
             <h3>How do I capture photos with the app?</h3>
-            <p>Open the app and you'll see the SNAP screen with 8 capture modes: Task, Text, Proof, Journal, Food, Value, Slide, or Idea. Tap what you're capturing, take the photo, and it goes directly to your iCloud Drive — never touching your Camera Roll. Photos auto-file to folders based on the mode you choose.</p>
+            <p>Open the app and you'll see the SNAP screen with 7 capture intents plus a No AI option: Task, Read, Proof, Food, Identify, Slide, or Reference. Tap what you're capturing, take the photo, and it goes directly to your iCloud Drive — never touching your Camera Roll. Photos auto-file to folders based on the intent you choose.</p>
         </div>
 
         <div class="faq-item">
@@ -125,7 +125,7 @@
             <h3>How do I process my photos?</h3>
             <p>Tap the Unfiled tab to see new photos in a grid. Tap any photo to open details where you can:</p>
             <ul>
-                <li><strong>Analyze:</strong> Run AI analysis (Task, Text, Proof, Journal, Food, Value, or Slide)</li>
+                <li><strong>Analyze:</strong> Run AI analysis (Task, Text, Proof, Food, Identify & Value, Slide, or Reference)</li>
                 <li><strong>Share:</strong> Send to Reminders, Things 3, or other apps</li>
                 <li><strong>Folder:</strong> Move to a folder for organization</li>
                 <li><strong>Delete:</strong> Remove the photo</li>
@@ -174,7 +174,7 @@
 
         <div class="faq-item">
             <h3>What folders are available?</h3>
-            <p>Default folders match your capture intents: Unfiled, Tasks, Documents, Food, Items, Slides, Journal, and Ideas. Create custom folders in the Files app (iCloud Drive → SnapTaskPhoto → Archive) — they appear automatically in the app.</p>
+            <p>There are 6 default folders: <strong>Unfiled</strong> (landing spot for quick captures), <strong>Tasks</strong> (actionable to-dos), <strong>Proof</strong> (receipts, evidence, documentation), <strong>Food</strong> (meal tracking), <strong>Slides</strong> (presentations and whiteboards), and <strong>Reference</strong> (IDs, cards, permanent lookup items). You can also create custom folders in the Files app (iCloud Drive → SnapTaskPhoto → Archive) and they'll appear automatically in the app.</p>
         </div>
 
         <div class="faq-item">
@@ -280,33 +280,55 @@
         </div>
     </div>
 
-    <!-- Understanding Your Camera Roll -->
+    <!-- Understanding Your iCloud Storage -->
     <div class="faq-section">
-        <h2>Understanding Your Camera Roll</h2>
+        <h2>Understanding Your iCloud Storage</h2>
 
         <div class="faq-item">
-            <h3>Albums are like playlists, not folders</h3>
-            <p>Your photos always live in your main Library. Albums are just groupings — like music playlists. The same photo can be in multiple albums at once (Vacation, Favorites, and Best of 2024, for example). Moving a photo to an album doesn't move it anywhere — it just adds a reference.</p>
+            <h3>You own your data</h3>
+            <p>Photos are stored in iCloud Drive under the SnapTaskPhoto folder. Browse them anytime in the Files app (iPhone) or Finder (Mac). They're your files — backed up, synced, and accessible even if you uninstall the app.</p>
         </div>
 
         <div class="faq-item">
-            <h3>Deleting an album doesn't delete photos</h3>
-            <p>When you delete an album, you're only removing the grouping. The photos stay in your Library and any other albums they belong to. It's like deleting a playlist — the songs don't disappear from your music library.</p>
+            <h3>File structure: two files per photo</h3>
+            <p>Each photo has two files:</p>
+            <ul>
+                <li><strong>.jpg</strong> — the image itself</li>
+                <li><strong>.json</strong> — metadata (notes, AI analysis, location, share history)</li>
+            </ul>
+            <p>Example: <code>20260118_143022_a1b2.jpg</code> and <code>20260118_143022_a1b2.json</code></p>
         </div>
 
         <div class="faq-item">
-            <h3>What does "Not in Any Album" mean?</h3>
-            <p>These are photos in your Library that haven't been added to any album yet — they're unorganized but not lost. Use SnapTaskPhoto's album filter to find and organize them.</p>
+            <h3>Simple folder structure</h3>
+            <p>Photos go directly into 6 folders at the top level of your SnapTaskPhoto storage. No subfolders. No nested complexity. You can create additional folders at the same level in the Files app — they appear automatically in the app.</p>
         </div>
 
         <div class="faq-item">
-            <h3>Recently Deleted: your safety net</h3>
-            <p>When you delete a photo from your Camera Roll, it moves to Recently Deleted and stays there for 30 days. You can recover it anytime during that window. After 30 days, it's permanently removed.</p>
+            <h3>The 6 folders explained</h3>
+            <ul>
+                <li><strong>Unfiled</strong> — Landing spot for quick captures, Read, and Identify results</li>
+                <li><strong>Tasks</strong> — Photos with actionable to-dos</li>
+                <li><strong>Proof</strong> — Receipts, damage photos, evidence you may need later</li>
+                <li><strong>Food</strong> — Meals with carb/calorie estimates</li>
+                <li><strong>Slides</strong> — Presentation slides and whiteboard captures</li>
+                <li><strong>Reference</strong> — IDs, cards, passwords — permanent lookup items</li>
+            </ul>
         </div>
 
         <div class="faq-item">
-            <h3>What about folders?</h3>
-            <p>Apple's Photos app lets you create folders to group related albums (like a Travel folder containing Italy, Japan, and France albums). SnapTaskPhoto can see albums inside folders — they appear in your album list just like any other album. However, when you create a new album from SnapTaskPhoto, it goes to the root level. This is an Apple limitation — there's no way for apps to create albums inside folders.</p>
+            <h3>The 8 capture options</h3>
+            <p>When you tap SNAP, you choose what you're capturing. This determines where it's filed and (if Auto-AI is on) how it's analyzed:</p>
+            <ul>
+                <li><strong>Task</strong> — Infers actionable task titles → files to Tasks</li>
+                <li><strong>Read</strong> — Extracts all visible text (OCR) → files to Unfiled</li>
+                <li><strong>Proof</strong> — Documents evidence with timestamp context → files to Proof</li>
+                <li><strong>Food</strong> — Identifies meals, estimates carbs/calories → files to Food</li>
+                <li><strong>Identify</strong> — Identifies items and estimates value → files to Unfiled</li>
+                <li><strong>Slide</strong> — Summarizes key points from presentations → files to Slides</li>
+                <li><strong>Reference</strong> — Extracts key details from documents/cards → files to Reference</li>
+                <li><strong>No AI</strong> — Quick capture without AI analysis → files to Unfiled</li>
+            </ul>
         </div>
     </div>
 
@@ -320,11 +342,10 @@
                 <li><strong>Task:</strong> Infers actionable task titles from the photo. Best for "what do I need to do?" situations.</li>
                 <li><strong>Text:</strong> Extracts all visible text verbatim. Best for documents and receipts. Non-English text is automatically translated.</li>
                 <li><strong>Proof:</strong> Documents evidence with timestamp and location context for records.</li>
-                <li><strong>Journal:</strong> Captures the mood and scene for memories — AI describes what it sees.</li>
                 <li><strong>Food:</strong> Identifies meals and estimates carbs and calories for tracking.</li>
-                <li><strong>Value:</strong> Identifies items and estimates worth — vehicles, electronics, art, antiques, mystery objects.</li>
+                <li><strong>Identify & Value:</strong> Identifies items and estimates worth — vehicles, electronics, art, antiques, mystery objects.</li>
                 <li><strong>Slide:</strong> Summarizes conference slides and presentations into key takeaways.</li>
-                <li><strong>Idea:</strong> Quick capture with no AI analysis — just snap and save for later.</li>
+                <li><strong>Reference:</strong> Extracts key information from documents and cards — names, numbers, dates, expiration, issuers, and other details for easy lookup.</li>
             </ul>
         </div>
 
