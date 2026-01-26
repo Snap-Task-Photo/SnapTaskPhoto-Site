@@ -98,7 +98,7 @@
 
         <div class="faq-item">
             <h3>How do I capture photos with the app?</h3>
-            <p>Open the app and you'll see the SNAP screen with 7 capture intents plus a No AI option: Task, Read, Receipt, Food, Mystery, Slide, or Reference. Tap what you're capturing, take the photo, and it goes directly to your iCloud Drive — never touching your Camera Roll. Photos auto-file to folders based on the intent you choose.</p>
+            <p>Open the app and you'll see the SNAP screen with 8 capture intents: Task, Read, Receipt, Food, Mystery, Slide, Reference, or Contact. Tap what you're capturing, take the photo, and it goes directly to your iCloud Drive — never touching your Camera Roll. Photos auto-file to folders based on the intent you choose.</p>
         </div>
 
         <div class="faq-item">
@@ -123,7 +123,7 @@
 
         <div class="faq-item">
             <h3>How do I process my photos?</h3>
-            <p>Tap the Unfiled tab to see new photos in a grid. Tap any photo to open details where you can:</p>
+            <p>Tap the Inbox tab to see new photos in a grid. Tap any photo to open details where you can:</p>
             <ul>
                 <li><strong>Analyze:</strong> Run AI analysis (Task, Text, Receipt, Food, Mystery, Slide, or Reference)</li>
                 <li><strong>Share:</strong> Send to Reminders, Things 3, or other apps</li>
@@ -174,12 +174,22 @@
 
         <div class="faq-item">
             <h3>What folders are available?</h3>
-            <p>There are 6 default folders: <strong>Unfiled</strong> (landing spot for quick captures), <strong>Tasks</strong> (actionable to-dos), <strong>Receipt</strong> (expenses, returns, purchases), <strong>Food</strong> (meal tracking), <strong>Slides</strong> (presentations and whiteboards), and <strong>Reference</strong> (IDs, cards, permanent lookup items). You can also create custom folders in the Files app (iCloud Drive → SnapTaskPhoto → Archive) and they'll appear automatically in the app.</p>
+            <p>There are 8 default folders: <strong>Tasks</strong> (actionable to-dos), <strong>Read</strong> (OCR/text extraction results), <strong>Receipt</strong> (expenses, returns, purchases), <strong>Food</strong> (meal tracking), <strong>Mystery</strong> (item identification results), <strong>Slides</strong> (presentations and whiteboards), <strong>Reference</strong> (IDs, cards, permanent lookup items), and <strong>Contacts</strong> (business cards). Plus <strong>Inbox</strong> as the landing spot for quick captures. You can also create custom folders in the Files app (iCloud Drive → SnapTaskPhoto) and they'll appear automatically in the app.</p>
         </div>
 
         <div class="faq-item">
             <h3>What's the difference between moving to a folder and deleting?</h3>
             <p>Moving to a folder keeps the photo in your iCloud Drive for reference — useful for receipts or things you've shared to Reminders. Delete moves it to a Deleted folder where you can recover it later or permanently remove it to free up space.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>What is Archive/Unarchive?</h3>
+            <p>Archive lets you hide completed items from your active view while keeping them in their original folder. Tap Archive on any photo to mark it as done — it disappears from the default view but stays organized where it belongs. Use the "Show Archived" toggle (archivebox icon in the toolbar) to see archived items again. Archived photos appear slightly dimmed with a badge. Tap Unarchive to bring them back to active view.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>When should I use Archive vs. moving to Archive folder?</h3>
+            <p>Use <strong>Archive (the button)</strong> when you want to hide a completed item but keep it in its category — like a processed receipt that should stay in Receipt. Use <strong>Archive folder</strong> as a general holding area for miscellaneous completed items that don't belong to a specific category.</p>
         </div>
     </div>
 
@@ -191,8 +201,8 @@
             <h3>What does Photo Gallery Cleanup do?</h3>
             <p>The Roll tab lets you triage your Camera Roll to separate task photos from memories. View your photos in a grid and decide what to do with each one:</p>
             <ul>
-                <li><strong>Move:</strong> Import to Unfiled, open Photo Details, then delete from Camera Roll</li>
-                <li><strong>Copy:</strong> Import to Unfiled, open Photo Details, but keep in Camera Roll</li>
+                <li><strong>Move:</strong> Import to Inbox, open Photo Details, then delete from Camera Roll</li>
+                <li><strong>Copy:</strong> Import to Inbox, open Photo Details, but keep in Camera Roll</li>
                 <li><strong>Keep:</strong> Mark as a memory — it won't appear in future cleanups</li>
                 <li><strong>Delete:</strong> Remove from Camera Roll entirely</li>
             </ul>
@@ -301,19 +311,22 @@
 
         <div class="faq-item">
             <h3>Simple folder structure</h3>
-            <p>Photos go directly into 6 folders at the top level of your SnapTaskPhoto storage. No subfolders. No nested complexity. You can create additional folders at the same level in the Files app — they appear automatically in the app.</p>
+            <p>Photos go directly into folders at the top level of your SnapTaskPhoto storage. No subfolders. No nested complexity. You can create additional folders at the same level in the Files app — they appear automatically in the app.</p>
         </div>
 
         <div class="faq-item">
-            <h3>The 6 folders explained</h3>
+            <h3>The 8 capture folders explained</h3>
             <ul>
-                <li><strong>Unfiled</strong> — Landing spot for quick captures, Read, and Mystery results</li>
                 <li><strong>Tasks</strong> — Photos with actionable to-dos</li>
+                <li><strong>Read</strong> — OCR/text extraction results</li>
                 <li><strong>Receipt</strong> — Expenses, returns, purchases</li>
                 <li><strong>Food</strong> — Meals with carb/calorie estimates</li>
+                <li><strong>Mystery</strong> — Item identification results</li>
                 <li><strong>Slides</strong> — Presentation slides and whiteboard captures</li>
                 <li><strong>Reference</strong> — IDs, cards, passwords — permanent lookup items</li>
+                <li><strong>Contacts</strong> — Business cards and contact information</li>
             </ul>
+            <p>Plus system folders: <strong>Inbox</strong> (landing spot for quick captures), <strong>Archive</strong> (completed items), and <strong>Deleted</strong> (recoverable trash).</p>
         </div>
 
         <div class="faq-item">
@@ -321,14 +334,15 @@
             <p>When you tap SNAP, you choose what you're capturing. This determines where it's filed and (if Auto-AI is on) how it's analyzed:</p>
             <ul>
                 <li><strong>Task</strong> — Infers actionable task titles → files to Tasks</li>
-                <li><strong>Read</strong> — Extracts all visible text (OCR) → files to Unfiled</li>
+                <li><strong>Read</strong> — Extracts all visible text (OCR) → files to Read</li>
                 <li><strong>Receipt</strong> — Extracts vendor, date, total → files to Receipt</li>
                 <li><strong>Food</strong> — Identifies meals, estimates carbs/calories → files to Food</li>
-                <li><strong>Mystery</strong> — Identifies unknown items and estimated value → files to Unfiled</li>
+                <li><strong>Mystery</strong> — Identifies unknown items and estimated value → files to Mystery</li>
                 <li><strong>Slide</strong> — Summarizes key points from presentations → files to Slides</li>
                 <li><strong>Reference</strong> — Extracts key details from documents/cards → files to Reference</li>
-                <li><strong>No AI</strong> — Quick capture without AI analysis → files to Unfiled</li>
+                <li><strong>Contact</strong> — Extracts contact info from business cards → files to Contacts</li>
             </ul>
+            <p>Plus <strong>Just Capture</strong> — Quick capture without AI analysis → files to Inbox.</p>
         </div>
     </div>
 
@@ -407,7 +421,7 @@
     </div>
 
     <h2>App Information</h2>
-    <p><strong>Current Version:</strong> 1.00</p>
+    <p><strong>Current Version:</strong> 1.02</p>
     <p><strong>Requires:</strong> iOS 18.0 or later</p>
     <p><strong>Developer:</strong> Digital Gemba, LLC</p>
 
